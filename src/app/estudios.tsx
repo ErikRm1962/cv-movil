@@ -7,13 +7,13 @@ const Estudios = () => {
       <View style={estilos.seccion}>
         <TarjetaEstudio
           titulo="Bachiller"
-          institucion="[COMPLETAR: colegio]"
+          institucion="Miguel Antonio Caro"
           anio={0}
           enCurso={false}
         />
         <TarjetaEstudio
           titulo="Técnico"
-          institucion="[COMPLETAR: institución]"
+          institucion="Tecnico  Sena en el colegio"
           anio={0}
           enCurso={false}
         />

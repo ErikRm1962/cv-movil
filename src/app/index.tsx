@@ -26,19 +26,19 @@ const Inicio = () => {
           textoBoton="Enviar Correo"
           nombreIcono="mail"
           colorBoton="#E8D464"
-          onPress={() => Alert.alert("Contacto", "Correo: [COMPLETAR]")}
+          onPress={() => Alert.alert("Contacto", "Correo: erikrm9086@gmail.com")}
         />
         <MiBoton
           textoBoton="Llamar"
           nombreIcono="call"
           colorBoton="#5B7FE8"
-          onPress={() => Alert.alert("Contacto", "Teléfono: [COMPLETAR]")}
+          onPress={() => Alert.alert("Contacto", "Teléfono: 32275500853")}
         />
         <MiBoton
           textoBoton="Ver Perfil LinkedIn"
           nombreIcono="logo-linkedin"
           colorBoton="#0A66C2"
-          onPress={() => Alert.alert("LinkedIn", "[COMPLETAR: enlace]")}
+          onPress={() => Alert.alert("LinkedIn", "https://www.linkedin.com/in/erik-rojas-7a5b4b1a9/")}
         />
         <MiBoton
           textoBoton="Facebook"

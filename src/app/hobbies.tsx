@@ -8,17 +8,17 @@ const Hobbies = () => {
         <TarjetaHobby
           nombre="Videojuegos"
           nombreIcono="game-controller-outline"
-          detalle="[COMPLETAR: detalle del pasatiempo]"
+          detalle="minecraft es mi videojuego favorito, me gusta jugarlo y crear mundos y estructuras dentro del juego. "
         />
         <TarjetaHobby
           nombre="Fútbol"
           nombreIcono="football-outline"
-          detalle="[COMPLETAR: detalle del pasatiempo]"
+          detalle="fútbol es mi deporte favorito, me gusta jugarlo y seguir los partidos de la liga local e internacional."
         />
         <TarjetaHobby
           nombre="Programación"
           nombreIcono="code-slash-outline"
-          detalle="[COMPLETAR: detalle del pasatiempo]"
+          detalle="actualmente estoy aprendiendo a programar en React Native y JavaScript, y me interesa el desarrollo de aplicaciones móviles y web."
         />
       </View>
     </ScrollView>
