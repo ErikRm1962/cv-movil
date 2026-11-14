@@ -1,6 +1,8 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
+const getTabIconColor = (color: unknown) => String(color ?? "#2563eb");
+
 export default function Layout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "#2563eb" }}>
@@ -10,7 +12,7 @@ export default function Layout() {
           title: "Inicio",
           headerTitle: "Datos Personales",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
+            <Ionicons name="person-outline" size={size} color={getTabIconColor(color)} />
           ),
         }}
       />
@@ -20,7 +22,7 @@ export default function Layout() {
           title: "Estudios",
           headerTitle: "Formación Académica",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="school-outline" size={size} color={color} />
+            <Ionicons name="school-outline" size={size} color={getTabIconColor(color)} />
           ),
         }}
       />
@@ -30,7 +32,7 @@ export default function Layout() {
           title: "Experiencia",
           headerTitle: "Experiencia Laboral",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="briefcase-outline" size={size} color={color} />
+            <Ionicons name="briefcase-outline" size={size} color={getTabIconColor(color)} />
           ),
         }}
       />
@@ -40,7 +42,7 @@ export default function Layout() {
           title: "Hobbies",
           headerTitle: "Intereses",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" size={size} color={color} />
+            <Ionicons name="heart-outline" size={size} color={getTabIconColor(color)} />
           ),
         }}
       />
