@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, Text, View } from "react-native";
 import MiBoton from "../components/MiBoton";
 
 const Inicio = () => {
@@ -7,7 +7,7 @@ const Inicio = () => {
     <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
       <View style={estilos.avatarContenedor}>
         <Ionicons name="person-circle" size={100} color="#2563eb" />
-        <Text style={estilos.nombre}>[Erik Nicolas Rojas Mancilla]</Text>
+        <Text style={estilos.nombre}>[COMPLETAR: nombre completo]</Text>
         <Text style={estilos.profesion}>Tecnólogo en ADSO</Text>
       </View>
 
@@ -22,11 +22,36 @@ const Inicio = () => {
 
       <View style={estilos.seccion}>
         <Text style={estilos.subtitulo}>Contacto</Text>
-        <MiBoton textoBoton="Enviar Correo" nombreIcono="mail" colorBoton="#E8D464" onPress={() => {}} />
-        <MiBoton textoBoton="Llamar" nombreIcono="call" colorBoton="#5B7FE8" onPress={() => {}} />
-        <MiBoton textoBoton="Ver Perfil LinkedIn" nombreIcono="logo-linkedin" colorBoton="#0A66C2" onPress={() => {}} />
-        <MiBoton textoBoton="Facebook" nombreIcono="logo-facebook" colorBoton="#1877F2" onPress={() => {}} />
-        <MiBoton textoBoton="GitHub" nombreIcono="logo-github" colorBoton="#24292f" onPress={() => {}} />
+        <MiBoton
+          textoBoton="Enviar Correo"
+          nombreIcono="mail"
+          colorBoton="#E8D464"
+          onPress={() => Alert.alert("Contacto", "Correo: [COMPLETAR]")}
+        />
+        <MiBoton
+          textoBoton="Llamar"
+          nombreIcono="call"
+          colorBoton="#5B7FE8"
+          onPress={() => Alert.alert("Contacto", "Teléfono: [COMPLETAR]")}
+        />
+        <MiBoton
+          textoBoton="Ver Perfil LinkedIn"
+          nombreIcono="logo-linkedin"
+          colorBoton="#0A66C2"
+          onPress={() => Alert.alert("LinkedIn", "[COMPLETAR: enlace]")}
+        />
+        <MiBoton
+          textoBoton="Facebook"
+          nombreIcono="logo-facebook"
+          colorBoton="#1877F2"
+          onPress={() => Alert.alert("Facebook", "[COMPLETAR: enlace]")}
+        />
+        <MiBoton
+          textoBoton="GitHub"
+          nombreIcono="logo-github"
+          colorBoton="#24292f"
+          onPress={() => Alert.alert("GitHub", "https://github.com/ErikRm1962")}
+        />
       </View>
     </ScrollView>
   );
