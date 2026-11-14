@@ -7,7 +7,7 @@ const Inicio = () => {
     <ScrollView style={estilos.contenedor} contentContainerStyle={estilos.contenido}>
       <View style={estilos.avatarContenedor}>
         <Ionicons name="person-circle" size={100} color="#2563eb" />
-        <Text style={estilos.nombre}>[COMPLETAR: nombre completo]</Text>
+        <Text style={estilos.nombre}>[Erik Nicolas Rojas Mancilla]</Text>
         <Text style={estilos.profesion}>Tecnólogo en ADSO</Text>
       </View>
 
